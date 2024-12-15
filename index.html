@@ -1,1 +1,427 @@
-Hello Thiemo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="icon" type="image/png" href="assets/img/logo/brugge.png"/>
+    <title>Plot</title>
+</head>
+<body>
+    <header class="header header__background">
+        <h1 class="header__title"><span class="hidden">Plot</span></h1>
+        <nav class="container menu">
+            <ul class="menu__items flex__center">
+                <li class="menu__item margin__right"><a href="index.html"><img class="menu__img" src="assets/img/logo/brugge.png" alt="logo" width="130" height="60"></a></li>
+                <li class="menu__item"><a class="menu__link" href="#event">Evenementen</a></li>
+                <li class="menu__item"><a class="menu__link" href="#story">Ons verhaal</a></li>
+                <li class="menu__item"><a class="menu__link" href="#info">Praktisch</a></li>
+                <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+                <li class="menu__item"><a class="menu__link--button" href="#program">Programma</a></li>
+            </ul>
+        </nav>
+        <!--nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" id="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul id="nav-links">
+                <li class="menu__item"><a class="menu__link--mobile" href="#event">Evenementen</a></li>
+                <li class="menu__item"><a class="menu__link--mobile" href="#story">Ons verhaal</a></li>
+                <li class="menu__item"><a class="menu__link--mobile" href="#info">Praktisch</a></li>
+                <li class="menu__item"><a class="menu__link--mobile" href="#contact">Contact</a></li>
+                <li class="menu__item"><a class="menu__link--button--mobile" href="#program">Programma</a></li>
+            </ul>
+        </nav-->
+        <section class="container flex__center container__margin--bottom">
+            <h2 class="hidden">Header</h2>
+            <img class="campaign" src="/assets/img/header/campaign.png" width="750" height="750">
+            <div class="flex__under margin__top">
+               <div class="margin__top--header"> 
+                    <p class="header__story">verhalenwandeling</p>
+                    <p class="header__plot margin__top">plot</p>
+                </div>
+                <div>
+                    <p class="header__date">donderdag 31 juli 2025</p>
+                    <p class="header__place">Natuurcentrum Beisbroek</p>
+                </div>
+                <div>
+                    <img class="arrow right" src="/assets/img/icons/arrow.png" width="60" height="100">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="intro" class="margin__top--intro">
+            <h2 class="hidden">Intro</h2>
+            <p class="hidden"><span id="time"></span></p>
+            <p class="hidden"><span id="hour"></span></p>
+            <article class="flex__center--content">
+                <h3 class="hidden">Welcome</h3>
+                <p class="intro__text">Ga mee op een </br> <span id="message"></span> </br> door het bos tijdens </br> Plot, <span class="bold">verhalenwandeling</span>!</p>
+            </article>
+            <article>
+                <h3 class="hidden">Intro text</h3>
+                <div class="flex__center">
+                    <p class="intro__box intro__box--right">Terwijl je geniet van een wandeling in het groen wordt je ondergedompeld in <span class="bold">prachtige verhalen</span> die op verschillende plaatsen in het bos tot leven komen. Na de <span class="bold">wandeling</span> maken we het <span class="bold">gezellig</span> op het plein voor het <span class="bold">Kasteel</span> of kan je aansluiten bij een voorstellingen in het <span class="bold">Planetarium</span>.</p>
+                    <p class="intro__box">Trek je wandelschoenen aan, ga op pad en geniet van de verhalen. Ontdek je <span class="bold">boeiende personages</span> die je meenemen in hun wonderlijke <span class="bold">avonturen</span>. Laat je verrassen door de hartverwarmende <span class="bold">vriendschappen</span>. Stap mee in een wereld vol magie en mysterie met onverwachte wendingen.</p>
+                </div>
+                <div class="flex__center--content">
+                    <button class="button"><a class="button__link" href="#story">Ontdek ons verhaal -></a></button>
+                </div>
+            </article>
+        </section>
+        <section id="program" class="container__program">
+            <h2 class="center beige">Programma</h2>
+            <article class="flex__center container__box">
+                <h3 class="hidden">Programma event</h3>
+                <div class="center container__box--container">
+                    <article class="flex__under--program">
+                        <img src="/assets/img/icons/welcome.png" width="100" height="70">
+                        <h4>Welkom & </br>verzamelen</h4>
+                        <p class="bold program__time">Vanaf 18u00</p>
+                        <p><span class="bold">Ontvangst</span> van deelnemers bij startlocatie in het bos</p>
+                        <img class="margin__star" src="/assets/img/icons/star.png" width="30" height="30">
+                        <p>Aangeboden <span class="bold">drankje </br> en hapje</span></p>
+                        <img class="margin__star" src="/assets/img/icons/star.png" width="30" height="30">
+                        <p>Korte <span class="bold">introductie</span> van de verhalenwandeling</p>
+                    </article>
+                </div>
+                <div class="program__line"></div>
+                <div class="center container__box--container">
+                    <article class="flex__under--program">
+                        <img src="/assets/img/icons/story.png" width="100" height="70">
+                        <h4>Verhalen </br>wandeling</h4>
+                        <p class="bold program__time">18u30 - 21u00</p>
+                        <p><span class="bold">Wandeling</span> door het </br>Beisbroekbos</p>
+                        <img class="margin__star" src="/assets/img/icons/star.png" width="30" height="30">
+                        <p>Onderweg wijzen <span class="bold">kleine </br> objecten</span> je de weg</p>
+                        <img class="margin__star" src="/assets/img/icons/star.png" width="30" height="30">
+                        <p>Geniet van verhalen die vertelt worden door <span class="bold">onze verhalenvertellers</span></p>
+                    </article>
+                </div>
+                <div class="program__line"></div>
+                <div class="center container__box--container">
+                    <article class="flex__under--program">
+                        <img src="/assets/img/icons/party.png" width="70" height="70">
+                        <h4>Nagenieten </br>met hapjes</h4>
+                        <p class="bold program__time">Vanaf 21u00</p>
+                        <p>Sfeervolle afsluiter </br> met <span class="bold">muziek</span></p>
+                        <img class="margin__star" src="/assets/img/icons/star.png" width="30" height="30">
+                        <p>Mogelijkheid om na te praten met een <span class="bold">drankje en hapje</span></p>
+                        <img class="margin__star" src="/assets/img/icons/star.png" width="30" height="30">
+                        <p>Deelnemers ontvangen <span class="bold">klein aandenken</span> aan deze wandeling</p>
+                    </article>
+                </div>
+            </article>
+            <div class="flex__center--content margin__top">
+                <button class="button__dark"><a class="button__link--dark" href="#info">Praktische info -></a></button>
+            </div>
+        </section>
+        <section id="event">
+            <div class="flex__center--end">
+                <h2 class="title__events">Onze andere evenementen</h2>
+                <div class="flex__center buttons__container">
+                    <button class="carrousel__arrow carrousel__arrow--prev" onclick="handleCarouselMove(false)"><img id="button__prev" src="assets/img/icons/arrow-left.png"/></button>
+                    <button class="carrousel__arrow carrousel__arrow--next" onclick="handleCarouselMove()"><img id="button__next" src="assets/img/icons/arrow-right.png"/></button>
+                </div>
+            </div>
+            <article>
+                <h3 class="hidden">Slideshow</h3>
+                <div class="cards__container carrousel__container flex__center">
+                    <div class="card__box carrousel__slide">
+                        <p class="age__box">vanaf 18 jaar</p>
+                        <img class="slider__img" src="assets/img/slider/ant.jpg" width="450" height="200">
+                        <div class="flex__center card__box--container">
+                            <h4 class="card__box--title">Dagcursus mieren</h4>
+                            <p class="card__box--price">€ 25</p>
+                        </div>
+                        <div class="flex__center card__box--container">
+                            <p class="card__box--date">Donderdag 4 september 2025</p>
+                            <p class="card__box--hour">11u30 - 18u30</p>
+                        </div>
+                    </div>
+                    <div class="card__box carrousel__slide">
+                        <p class="age__box">9 tot 12 jaar</p>
+                        <img class="slider__img" src="assets/img/slider/house.jpg" width="450" height="200">
+                        <div class="flex__center card__box--container">
+                            <h4 class="card__box--title">Insectenhuisje bouwen</h4>
+                            <p class="card__box--price">€ 2</p>
+                        </div>
+                        <div class="flex__center card__box--container">
+                            <p class="card__box--date">Woensdag 27 november 2025</p>
+                            <p class="card__box--hour">14u00 - 16u00</p>
+                        </div>
+                    </div>
+                    <div class="card__box carrousel__slide">
+                        <p class="age__box">alle leeftijden</p>
+                        <img class="slider__img" src="assets/img/slider/night.jpg" width="450" height="200">
+                        <div class="flex__center card__box--container">
+                            <h4 class="card__box--title">Nocturne</h4>
+                            <p class="card__box--price">€ 15</p>
+                        </div>
+                        <div class="flex__center card__box--container">
+                            <p class="card__box--date">Zaterdag 9 november 2025</p>
+                            <p class="card__box--hour">19u30 - 23u00</p>
+                        </div>
+                    </div>
+                    <div class="card__box carrousel__slide">
+                        <p class="age__box">9 tot 12 jaar</p>
+                        <img class="slider__img" src="assets/img/slider/plant.jpg" width="450" height="200">
+                        <div class="flex__center card__box--container">
+                            <h4 class="card__box--title">Plantactie</h4>
+                            <p class="card__box--price">€ 2</p>
+                        </div>
+                        <div class="flex__center card__box--container">
+                            <p class="card__box--date">Maandag 11 november 2025</p>
+                            <p class="card__box--hour">14u00 - 16u00</p>
+                        </div>
+                    </div>
+                    <div class="card__box carrousel__slide">
+                        <p class="age__box">9 tot 12 jaar</p>
+                        <img class="slider__img" src="assets/img/slider/halloween.jpg" width="450" height="200">
+                        <div class="flex__center card__box--container">
+                            <h4 class="card__box--title">Griezelwandeling</h4>
+                            <p class="card__box--price">€ 2</p>
+                        </div>
+                        <div class="flex__center card__box--container">
+                            <p class="card__box--date">Maandag 13 november 2025</p>
+                            <p class="card__box--hour">14u00 - 16u00</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="story" class="container__margin header__background beige">
+            <h2 class="center title__story">Ons verhaal</h2>
+            <article class="container">
+                <h3 class="hidden">Story</h3>
+                <p class="intro__text--story">Midden in het groene hart van <span class="bold yellow">Brugge </span></br>ligt <span class="bold yellow">Natuurcentrum Beisbroek</span>, een </br>plek waar <span class="bold yellow">natuurbeleving en </br> educatie</span> hand in hand gaan.</p>
+                <img id="rotating" class="centered container__margin--bottom rotate" src="/assets/img/icons/star.png" width="50" height="50">
+                <div class="flex__center">
+                    <div class="story__box">
+                        <p>Dit centrum, gelegen in het prachtige <span class="bold">Beisbroekbos</span>, biedt bezoekers een unieke kans om meer te leren over de natuur, het milieu en de <span class="bold">prachtige omgeving</span> van Brugge.</p>
+                        <h4 class="text__transform">Educatie en bewustwording</h4>
+                        <p class="margin__star">Natuurcentrum Beisbroek staat bekend om zijn <span class="bold">educatieve programma’s</span> die zowel scholen, gezinnen als individuen uitnodigen om op een <span class="bold">interactieve manier</span> de natuur te verkennen.</p>
+                        <p>Met tentoonstellingen, workshops en excursies biedt het centrum een breed <span class="bold">scala aan activiteiten</span> die gericht zijn op het vergroten van bewustzijn over het <span class="bold"> milieu en duurzame ontwikkeling</span>.</p>
+                    </div>
+                    <div class="story__img">
+                        <img class="img" src="assets/img/photos/beisbroek.png"/>
+                    </div>
+                </div>
+                <div class="flex__center margin__top--intro container__margin--bottom">
+                    <div>
+                        <img class="img" src="assets/img/photos/painting.png"/>
+                    </div>
+                    <div class="story__box">
+                        <h4 class="text__transform">Natuurbeleving voor Iedereen</h4>
+                        <p>Het domein rond het natuurcentrum, met uitgestrekte bossen, weiden en vijvers, is een <span class="bold">heerlijke plek </span> voor een ontspannende wandeling of fietstocht. Bezoekers kunnen de <span class="bold">verschillende wandelroutes</span> volgen die hen langs indrukwekkende bomen, unieke flora en fauna, en <span class="bold">idyllische landschappen </span> leiden. </p>
+                        <p class="margin__star">Voor kinderen is er een <span class="bold">avontuurlijke speelzone</span> en speciale activiteiten zoals speurtochten en natuurkampen, waar ze <span class="bold">spelenderwijs meer leren </span>over het leven in het bos.</p>
+                        <button class="button__dark button__darkness"><a class="button__link--dark" href="#contact">Contacteer ons -></a></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="info" class="margin__top--intro container__margin--bottom">
+            <div class="flex__center margin__top--intro">
+                <div class="flex__center">
+                    <img src="/assets/img/icons/marker.png">
+                    <div class="brown bold">
+                        <p>Zeeweg 96</p>
+                        <p>8200 Brugge</p>
+                    </div>
+                </div>
+                <h2 class="nopadding brown">Praktisch</h2>
+            </div>
+            <article class="flex__center--content">
+                <h3 class="hidden">Map</h3>
+               <iframe class="margin__map" style="filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);" width="1500" height="500" src="https://www.openstreetmap.org/export/embed.html?bbox=2.7822875976562504%2C50.98826013045302%2C3.5238647460937504%2C51.36449277366826&amp;layer=mapnik&amp;marker=51.176760221369186%2C3.153076171875"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=51.1768&amp;mlon=3.1531#map=11/51.1768/3.1531"></a></small>
+            </article>
+            <article class="margin__top--intro flex__center">
+                <h3 class="hidden">Info</h3>
+                <div class="brown">
+                    <h5>Bereikbaarheid</h5>
+                    <p>Natuurcentrum Beisbroek is gemakkelijk bereikbaar en ligt op slechts enkele kilometers van het centrum van Brugge. Of je nu met de auto, fiets of het openbaar vervoer komt, er zijn verschillende mogelijkheden om dit prachtige natuurgebied te bereiken.</p>
+                </div>
+                <div class="beige info__box">
+                    <h5 class="icon h5__margin">Rolstoeltoegankelijk</h5>
+                    <p>Ook mensen met een beperkte mobiliteit zijn van harte welkom in onze stadsbossen.</p> 
+                    <p class="margin__star">Vanaf 23 september 2024 tot eind juni 2025 kan je in het Natuurcentrum gratis een elektrische rolstoel ontlenen. De rolstoel is uiterst wendbaar en geschikt voor oneffen terrein. De besturing is afneembaar: je kunt die zelf besturen via een joystick of laten besturen.</p>
+                </div>
+            </article>
+            <article>
+                <h3 class="hidden">Opties</h3>
+                <div class="container__options margin__top--intro">
+                    <div class="option__box option__box--car">
+                        <button class="option__item"><span class="option__icon"><img src="/assets/img/icons/car.png"></span>Met de auto<span class="arrow"><img src="/assets/img/icons/option__open.png"></span></button>
+                        <div class="option__item--text">
+                            <p class="brown">Volg de E40 richting Brugge en neem afslag 8 naar de N31. Volg de borden richting Sint-Andries en daarna richting Beisbroek. Er is een ruime parkeerplaats beschikbaar aan de ingang van het domein, waar je je auto gratis kunt parkeren.</p>
+                        </div>
+                    </div>
+                    <div class="option__box">
+                        <button class="option__item"><span class="option__icon"><img src="/assets/img/icons/bike.png"></span>Met de fiets<span class="arrow"><img src="/assets/img/icons/option__open.png"></span></button>
+                        <div class="option__item--text">
+                            <p>Vanuit het centrum van Brugge ben je in ongeveer 20 minuten met de fiets in het Beisbroekbos. Er zijn veilige fietspaden en bewegwijzerde routes die je doorheen de prachtige groene omgeving naar het natuurcentrum leiden. Er is een fietsenstalling beschikbaar bij het centrum.</p>
+                        </div>
+                    </div>
+                    <div class="option__box">
+                        <button class="option__item"><span class="option__icon"><img src="/assets/img/icons/bus.png"></span>Met het openbaar vervoer<span class="arrow"><img src="/assets/img/icons/option__open.png"></span></button>
+                        <div class="option__item--text">
+                            <p>Het natuurcentrum is ook bereikbaar met de bus. Neem lijn 25 vanuit het centrum van Brugge richting Zedelgem, en stap af bij de halte “Beisbroek”. Vanaf daar is het slechts een korte wandeling door het bos naar het natuurcentrum.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <h2 class="hidden">Slideshow</h2>
+                <div class="slideshow-container margin__top--intro">
+                    <div class="mySlides fade flex__center">
+                        <div>
+                            <img class="img" src="/assets/img/slideshow/photo1.png">
+                            <h4 class="normalcase nomargin brown">Domein Beisbroek</h4>
+                        </div>
+                        <div>
+                            <p class="numbertext active">1 <span class="margin__slideshow slideshow__text">Natuurcentrum Beisbroek</span><a href="https://www.brugge.be/vrije-tijd/natuur/bezoek-domein-beisbroek"><button class="carrousel__arrow carrousel__arrow--prev button__rotate"><img id="arrow__diagonal" src="assets/img/icons/arrow-right.png"/></button></a></p>
+                            <p class="numbertext">2 <span class="margin__slideshow slideshow__text">Volkssterrenwacht Cozmix</span></p>
+                            <p class="numbertext">3 <span class="margin__slideshow slideshow__text">Cafetaria t'Koetsenhuis</span></p>
+                            <p class="numbertext">4 <span class="margin__slideshow slideshow__text">Picknickplaats</span></p>
+                            <p class="numbertext">5 <span class="margin__slideshow slideshow__text">Planetenpad</span></p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade flex__center">
+                        <div>
+                            <img class="img" src="/assets/img/slideshow/photo2.png">
+                            <h4 class="normalcase nomargin brown">Domein Beisbroek</h4>
+                        </div>
+                        <div>
+                            <p class="numbertext">1 <span class="margin__slideshow slideshow__text">Natuurcentrum Beisbroek</span></p>
+                            <p class="numbertext active brown">2 <span class="margin__slideshow slideshow__text">Volkssterrenwacht Cozmix</span><a href="https://www.cozmix.be/nl"><button class="carrousel__arrow carrousel__arrow--prev button__rotate"><img id="arrow__diagonal2" src="assets/img/icons/arrow-right.png"/></button></a></p>
+                            <p class="numbertext">3 <span class="margin__slideshow slideshow__text">Cafetaria t'Koetsenhuis</span></p>
+                            <p class="numbertext">4 <span class="margin__slideshow slideshow__text">Picknickplaats</span></p>
+                            <p class="numbertext">5 <span class="margin__slideshow slideshow__text">Planetenpad</span></p>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade flex__center">
+                        <div>
+                            <img class="img" src="/assets/img/slideshow/photo3.png">
+                            <h4 class="normalcase nomargin brown">Domein Beisbroek</h4>
+                        </div>
+                        <div>
+                            <p class="numbertext">1 <span class="margin__slideshow slideshow__text">Natuurcentrum Beisbroek</span></p>
+                            <p class="numbertext">2 <span class="margin__slideshow slideshow__text">Volkssterrenwacht Cozmix</span></p>
+                            <p class="numbertext active">3 <span class="margin__slideshow slideshow__text">Cafetaria t'Koetsenhuis</span></p>
+                            <p class="numbertext">4 <span class="margin__slideshow slideshow__text">Picknickplaats</span></p>
+                            <p class="numbertext">5 <span class="margin__slideshow slideshow__text">Planetenpad</span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="mySlides fade flex__center">
+                        <div>
+                            <img class="img" src="/assets/img/slideshow/photo4.png">
+                            <h4 class="normalcase nomargin brown">Domein Beisbroek</h4>
+                        </div>
+                        <div>
+                            <p class="numbertext">1 <span class="margin__slideshow slideshow__text">Natuurcentrum Beisbroek</span></p>
+                            <p class="numbertext">2 <span class="margin__slideshow slideshow__text">Volkssterrenwacht Cozmix</span></p>
+                            <p class="numbertext">3 <span class="margin__slideshow slideshow__text">Cafetaria t'Koetsenhuis</span></p>
+                            <p class="numbertext active">4 <span class="margin__slideshow slideshow__text">Picknickplaats</span></p>
+                            <p class="numbertext">5 <span class="margin__slideshow slideshow__text">Planetenpad</span></p>
+                        </div>
+                    </div>
+
+
+                    <div class="mySlides fade flex__center">
+                        <div>
+                            <img class="img" src="/assets/img/slideshow/photo5.png">
+                            <h4 class="normalcase nomargin brown">Domein Beisbroek</h4>
+                        </div>
+                        <div>
+                            <p class="numbertext">1 <span class="margin__slideshow slideshow__text">Natuurcentrum Beisbroek</span></p>
+                            <p class="numbertext">2 <span class="margin__slideshow slideshow__text">Volkssterrenwacht Cozmix</span></p>
+                            <p class="numbertext">3 <span class="margin__slideshow slideshow__text">Cafetaria t'Koetsenhuis</span></p>
+                            <p class="numbertext">4 <span class="margin__slideshow slideshow__text">Picknickplaats</span></p>
+                            <p class="numbertext active">5 <span class="margin__slideshow slideshow__text">Planetenpad</span></p>
+                        </div>
+                    </div>
+                      
+                      <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                      </div>
+                </div>
+            </article>
+        </section>
+        <section id="contact" class="container__margin header__background beige">
+            <h2 class="title__story container">Contacteer ons</h2>
+            <div class="flex__center container container__margin--bottom">
+                <article class="contact__width">
+                    <h3 class="hidden">Vragen</h3>
+                    <p>Heb je een vraag over Plot of wil je iets meedelen aan de organisatie? Contacteer ons en je krijgt van ons gegarandeerd een reactie.</p>
+                    <p class="margin__text">+32 (0)50 32 90 20</p>
+                    <p>www.brugge.be/natuurcentrum-beisbroek</p>
+                </article>
+                <article class="contact__width">
+                    <h3 class="hidden">Openingsuren</h3>
+                    <p class="bold">Openingsuren</p>
+                    <div class="flex__center">
+                        <div class="margin__text">
+                            <p class="bold">Maandag - donderdag</p>
+                            <p>14u00 - 17u00</p>
+                        </div>
+                        <div>
+                            <p class="bold">Zondag</p>
+                            <p>14u00 - 18u00</p>
+                        </div>
+                    </div>
+                    <p class="margin__text cursive">Andere uren zijn mogelijk op afspraak voor scholen en groepen.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__color footer__padding">
+        <article class="container flex__center--footer beige">
+            <div class="plot__logo--width">
+                <p class="logo__top">Verhalenwandeling</p>
+                <h3 class="logo__bottom">Plot</h3>
+            </div>
+            <nav class="">
+                <ul class="">
+                    <li class="menu__item"><a class="menu__link menu__link--footer" href="#program">Programma</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--footer" href="#event">Evenementen</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--footer" href="#story">Ons verhaal</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="">
+                    <li class="menu__item"><a class="menu__link menu__link--footer" href="#info">Praktisch</a></li>
+                    <li class="menu__item"><a class="menu__link menu__link--footer" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p class="bold">Volg ons op</p>
+                <a href="https://www.facebook.com/natuurcentrumbeisbroek/?locale=nl_BE"><button class="carrousel__arrow carrousel__arrow--prev margin__text"><img id="facebook" src="assets/img/icons/facebook.png"/></button></a>
+                <a href="https://www.instagram.com/natuurcentrumbeisbroekbrugge/"><button class="carrousel__arrow carrousel__arrow--prev"><img id="instagram" src="assets/img/icons/insta.png"/></button></a>
+            </div>
+            <div class="flex__under">
+                <img  src="assets/img/logo/brugge.png"/>
+                <img class="margin__text" src="assets/img/logo/oog.png"/>
+            </div>
+        </article>
+    </footer>
+    <p class="copyright margin__text center brown">Deze website is een opdracht voor Atelier 3 van het graduaat Digitale Vormgever - Online & Offline Graphic Design aan Howest Hogeschool -  © Louise Vanhille</p>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
